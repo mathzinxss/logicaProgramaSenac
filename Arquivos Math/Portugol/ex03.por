@@ -9,9 +9,8 @@ programa{
     escreva("Digite a terceira nota: ")
     leia(nota3)
 
-    resultado = (nota1 + nota2 + nota3) / 3
-
+    resultado = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10
     escreva("A média das notas é: ", resultado)
-
+    
     }
 }
