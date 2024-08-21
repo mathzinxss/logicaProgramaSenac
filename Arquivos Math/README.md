@@ -18,3 +18,5 @@ Somar a idade de duas pessoas que estão ao meu lado.
 - Digitar a idade do `2º amigo`
 - Somar as idades
 - Mostrar o resultado
+
+### **3ª Atividade de Lógica de Programação**
