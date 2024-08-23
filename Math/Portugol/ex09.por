@@ -7,7 +7,8 @@ programa
         escreva("Digite um número, irei calcular se é par ou impar: ")
         leia(numero)
 
-        se (numero % 2 == 0) {
+        se (numero % 2 == 0)
+        {
             escreva("O número é par")
         }
         senao{
