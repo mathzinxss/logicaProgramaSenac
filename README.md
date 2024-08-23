@@ -52,3 +52,5 @@ Pedir dois números, calcular e mostrar a soma, subtração, multiplicação e d
 4. Criar um programa para verificar se o número digitado é maior que 10.
 
 5. Faça um algoritmo que leia as notas n1 e n2 de um aluno. Calcular a média aritmética e escrever uma mensagem que diga se o aluno foi ou não aprovado. Obs: Considere que a média para aprovação é 6.0
+
+6. As maças custam R$1,30 cada se forem compradas menos de uma dúzia, e R$1,00 se forem compradas pelo menos 12. Escreve um programa que leia o número de maças compradas, calcule e escreva o custo total da compra. 
