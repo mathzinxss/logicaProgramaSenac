@@ -1,7 +1,6 @@
 programa{
     funcao inicio(){
         inteiro numero
-
         escreva("Digite um número")
         leia(numero)
         se(numero > 10) {
@@ -15,6 +14,5 @@ programa{
                 escreva("O número", numero, "é menor que 10")
             }
         }
-
     }
 }
