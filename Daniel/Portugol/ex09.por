@@ -1,16 +1,22 @@
 programa{
     funcao inicio()
     {
-        inteiro num
-        escreva("Digíte um número")
-        leia(num)
-        se(num%2==0)
+        inteiro idade
+        escreva("Dígite um número: ")
+        leia(idade)
+        se(idade>18)
         {
-            escreva("O número é par")
+            escreva("Você é adulto!")
         }
-        senao
-        {
-            escreva("O número é impar")
+        senao{
+            se(idade==18)
+            {
+                escreva("Você é adulto!")
+            }
+            senao{
+                escreva("Você é menor de idade!")
+            }
         }
+
     }
 }
