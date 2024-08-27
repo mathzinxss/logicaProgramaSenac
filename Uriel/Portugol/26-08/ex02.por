@@ -15,7 +15,7 @@ programa{
 
         se (mediaA >= 9.0){
             escreva("Você tirou A")
-        }senao se(mediaA >= 7.5 e mediaA < 9.0){
+        }senao se(mediaA >= 7.5 e mediaA < 9.0){ 
             escreva("Você tirou B")
         }senao se(mediaA >= 6.0 e mediaA < 7.5){
             escreva("Você tirou C")
