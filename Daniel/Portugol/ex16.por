@@ -4,7 +4,7 @@ programa
     {
     para(inteiro valor=1;valor<=10;valor++)
     {
-        escreva(valor+" - ")
+        escreva(valor+"\n")
     }
     
 
