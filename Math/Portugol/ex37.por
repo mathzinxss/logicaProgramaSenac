@@ -22,10 +22,12 @@ programa {
             senao {
                 exame++
             }
+
         }
         escreva("\nAo todo temos: \n\n", aprovados, "alunos aprovados.\n", reprovados, "alunos reprovados.\n", exame, "alunos que passarão por exame.")
 
         escreva("\n\n")   
+
     /*
         Escreva um algorítimo que calcule a média aritmética de 10 alunos, verifique e mostre quantos estão aprovados, reprovados e de exame.
 
@@ -37,6 +39,7 @@ programa {
             Reprovados: >= 3 e < 7
             Exame: >= 0 e < 3
     */
-    }
 
+    }
+    
 }
