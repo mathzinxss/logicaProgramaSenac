@@ -1,6 +1,7 @@
 programa{
     funcao inicio(){
-        inteiro n1, n2, result, reprovado, exame, aprovado
+        real n1, n2, result 
+        inteiro reprovado=0, exame=0, aprovado=0
  
         para(inteiro n = 1; n <= 3; n++){
             escreva("\nQual a primeira nota do aluno? ")
@@ -10,16 +11,16 @@ programa{
 
             result = (n1+n2)/2
 
-            se(result >=7 e result <=10){
+            se(result >=7){
                 aprovado++ 
-            } senao se(result >=3 e result <7){
+            } senao se(result >=3){
                 exame++
             }senao{
                 reprovado++
             }
         }
         escreva("\nAprovados:",aprovado,
-                "\nPara exame:",exame,,
+                "\nPara exame:",exame,
                 "\nReprovados:",reprovado,"\n")
     }
 }
