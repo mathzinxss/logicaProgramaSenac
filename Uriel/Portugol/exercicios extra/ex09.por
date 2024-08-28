@@ -9,7 +9,7 @@ programa{
         escreva("Qual a sua terceira nota? ")
         leia(n3)
 
-        result = n1+n2+n3/2
+        result = (n1+n2+n3)/3
 
         escreva(result)
     }
