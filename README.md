@@ -1,4 +1,4 @@
-# logicaProgramaSenac# Lógica de Programação
+# Lógica de Programação
 
 ### **1ª Atividade de Lógica de Programação**
 
@@ -85,5 +85,5 @@ Tabela Condições IMC
  Entre 35,0 e 39,9 | Obesidade grau II (severa)
  Maior ou igual a 40 | Obesidade grau III (mórbida)
 
-## **------------------ Fim ------------------**
+## **---------------------------- Fim ----------------------------**
 
