@@ -3,6 +3,7 @@ programa
 	
 	funcao inicio()
 {
+		// TODO Exercício soma idade
 		// Comemtário
 		// Sintaxe tipo <nome da variável>
 		// inteiro idadePriAmigo

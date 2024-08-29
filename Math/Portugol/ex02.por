@@ -2,6 +2,7 @@ programa {
 
     funcao inicio() 
     {
+        // TODO Exercício de soma/multiplicação/potência
         inteiro num1, num2
         real resultado
         
