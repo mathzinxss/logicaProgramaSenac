@@ -1,5 +1,7 @@
 # Lógica de Programação
 
+[link de estilização de perfil para o github](https://profile-readme-generator.com)
+
 ### **1ª Atividade de Lógica de Programação**
 
 Criar uma lista de ações para fazer a soma do número 1 com o número 2.
