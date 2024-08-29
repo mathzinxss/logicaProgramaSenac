@@ -1,9 +1,10 @@
 programa {
     funcao inicio() {
 
-        inteiro pergunta1, pergunta2, pergunta3, pergunta4, pergunta5, afirmacao, negacao
+        inteiro afirmacao = 0
+        inteiro respostas[5]
 
-        escreva("Vou te fazer cinco perguntas sobre este crime, quero que você seja 110% sincero(a).\n\nPara SIM = Digite [1]\nPara NÃO = Digite [2]")
+        escreva("Vou te fazer cinco perguntas sobre este crime, quero que você seja 100% sincero(a).\n\nPara SIM = Digite [1]\nPara NÃO = Digite [2]")
         
         escreva("\n\n\n1º Pergunta\n")
         escreva("Telefonou para a vítima? ")
@@ -26,39 +27,24 @@ programa {
         se(pergunta1 == 1){
             afirmacao++
         }
-        senao{
-            negacao++
-        }
-        
+      
         se(pergunta2 == 1){
             afirmacao++
         }
-        senao{
-            negacao++
-        }
-        
+
         se(pergunta3 == 1){
             afirmacao++
-        }
-        senao{
-            negacao++
         }
         
         se(pergunta4 == 1){
             afirmacao++
         }
-        senao{
-            negacao++
-        }
-        
+
         se(pergunta5 == 1){
             afirmacao++
         }
-        senao{
-            negacao++
-        }
 
-        se(afirmacao == 2 e negacao == 3){
+        se(afirmacao == 2){
             escreva("Você está classificado como SUSPEITO!")
         }
         senao se(afirmacao >= 3 e afirmacao <= 4) {
