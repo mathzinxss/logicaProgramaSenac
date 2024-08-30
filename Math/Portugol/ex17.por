@@ -1,5 +1,6 @@
 programa {
     funcao inicio() {
+        // TODO Nota fiscal
         cadeia nomeProduto
         inteiro quantidade
         real preco, total, totalPagar
