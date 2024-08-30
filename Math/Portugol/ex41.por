@@ -2,8 +2,7 @@ programa {
     funcao inicio() {
 
         inteiro habitantes = 1
-        inteiro numFilhosTotal = 0
-        inteiro numFilhos, numSalarioTotal, habitantesTotal, mediaSalario, salarioMenor
+        inteiro numFilhos, numSalarioTotal, mediaSalario, salarioMenor, numFilhosTotal
         real salario
 
         enquanto (habitantes <= 2) {
