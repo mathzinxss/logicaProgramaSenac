@@ -1,12 +1,11 @@
 programa {
     funcao inicio() {
 
-        inteiro quantidade = 0, numMaior = 0, media
-        inteiro num
+        inteiro quantidade = 0, numMaior = 0, media, num
+        cadeia nome
 
         escreva("Digite uma quantidade: ")
         leia(quantidade)
-        escreva("\n")
 
         para (inteiro contador = 1; contador <= quantidade; contador++) {
             escreva("Digite um número: ")
@@ -23,7 +22,10 @@ programa {
          
         escreva("\n\nO maior número é: ", numMaior)
         escreva("\nA média dos números é: ", media)
+        escreva("\nDigite seu nome: ")
+        leia(nome)
         
+        escreva(t.caixa_altanome)
 
 
         escreva("\n\n\n\n")
