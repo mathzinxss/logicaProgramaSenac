@@ -5,7 +5,7 @@ programa{
         escreva("Quantos números você quer? ")
         leia(n)
 
-        para(n = 0; n<5; n++){
+        para(inteiro i = 0; i<n; i++){
             escreva("Digite um número: ") 
             leia(num)
 
