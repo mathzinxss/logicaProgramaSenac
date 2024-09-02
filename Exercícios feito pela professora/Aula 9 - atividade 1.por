@@ -4,14 +4,10 @@ programa
 	
 	funcao inicio()
 	{
-		/*71) Faça um algoritmo para ler uma quantidade e a seguir 
-		ler esta quantidade de números. Depois de ler todos os números
-		o algoritmo deve apresentar na tela o maior dos 
-		números lidos
-		e a média = soma dos núm. lidos /qtd números lidos dos 
-		números lidos.*/
-		inteiro i, num, maior=0, soma=0
-		cadeia nome
+
+		inteiro i, num, maior = 0, soma = 0
+		cadeia nome 
+
 		escreva("Informe seu nome: ")
 		leia(nome)
 		escreva("Informe quantos números serão digitados: ")

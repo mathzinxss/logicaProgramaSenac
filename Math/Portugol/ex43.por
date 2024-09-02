@@ -23,9 +23,9 @@ programa {
         escreva("\n\nO maior número é: ", numMaior)
         escreva("\nA média dos números é: ", media)
         escreva("\nDigite seu nome: ")
-        leia(t.caixa_alta(nome)) 
+        leia(nome)
         
-        escreva("\n",nome)
+        escreva(t.caixa_altanome)
 
 
         escreva("\n\n\n\n")
