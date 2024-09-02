@@ -1,9 +1,11 @@
 programa {
     funcao inicio() {
 
-        inteiro quantidade = 0, numMaior = 0, media
-        inteiro num
+        inteiro quantidade = 0, numMaior = 0, media, num
+        cadeia nome
 
+        escreva("Digite seu nome: ")
+        leia(t.caixa_alta(nome)) 
         escreva("Digite uma quantidade: ")
         leia(quantidade)
         escreva("\n")
