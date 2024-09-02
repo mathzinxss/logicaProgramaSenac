@@ -1,14 +1,15 @@
 programa{
     funcao inicio(){
 
-        para(inteiro i = 1; i <= 5; i++){
+        escreva("\n")
+
+        para(inteiro i = 1; i <= 10; i++){
             escreva("(",i,",")
 
-            para(inteiro n = 1; n <= 5; n++){
+            para(inteiro n = 1; n <= i; n++){
                 escreva(n)
-                se(n=5){
-                escreva(")")
-                }
+            }
+            escreva(")\n")
             }
         }
     }
