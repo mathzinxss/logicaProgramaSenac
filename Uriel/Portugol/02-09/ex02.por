@@ -16,7 +16,7 @@ programa{
             }
         }
         
-        media = media/i
+        media = media/n
         escreva(max, media)
     }
 }
