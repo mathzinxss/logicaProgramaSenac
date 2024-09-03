@@ -1,7 +1,7 @@
 programa {
     funcao inicio() {
 
-        inteiro num1, num2, decisao, resultado
+        inteiro num1, num2, decisao
 
         escreva("Digite um número: ")
         leia(num1)
@@ -15,23 +15,19 @@ programa {
         escolha(decisao) {
             caso 1:
                 escreva("\nSoma!")
-                resultado = num1 + num2
-                escreva("O resultado da soma é:", resultado)
+                escreva("O resultado da soma é:", (num1 + num2))
             pare
             caso 2:
                 escreva("\nSubtração!")
-                resultado = num1 - num2
-                escreva("O resultado da subtração é:", resultado)
+                escreva("O resultado da subtração é:", (num1 - num2))
             pare
             caso 3:
                 escreva("\nMultiplicação!")
-                resultado = num1 * num2
-                escreva("O resultado da multiplicação é:", resultado)
+                escreva("O resultado da multiplicação é:", (num1 * num2))
             pare
             caso 4:
                 escreva("\nDivisão!")
-                resultado = num1 / num2
-                escreva("O resultado da divisão é:", resultado)
+                escreva("O resultado da divisão é:", (num1 / num2))
             caso contrario:
                 escreva("\nOpção inválida!")
             
