@@ -25,6 +25,13 @@ programa {
 
                 Informe o nome da pessoa ou digite fim
 
+            TODO Transformar qualquer texto digitado pelo usuário em maiúsculo:
+
+                inclua biblioteca Texto --> t (encima do `função início()`)
+
+                leia(nome)
+                nome=t.caixa_alta(nome)
+
         */
     }
 }
