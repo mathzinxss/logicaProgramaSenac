@@ -1,7 +1,17 @@
 programa {
     funcao inicio() {
 
-    
+        inteiro contador
+
+        escreva("\n")
+        
+        para (contador = 1; contador <= 10; contador++) {
+            escreva("(", contador, ",")
+            para (inteiro i = 1; i <= contador; i++) {
+                escreva(i)
+            }
+            escreva(")\n")
+        }
 
         escreva("\n\n\n\n")
         /*
