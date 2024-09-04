@@ -2,9 +2,9 @@ programa {
     inclua biblioteca Texto --> t
     funcao inicio() {
 
-        inteiro habitantes = 1
-        inteiro numFilhos, numSalarioTotal, mediaSalario, salarioMenor, numFilhosTotal
-        real salario
+        inteiro habitantes = 0
+        inteiro numFilhos, mediaSalario, salarioMenor, numFilhosTotal, salarioMaior = 0
+        real salario, numSalarioTotal
         cadeia decisao
 
         enquanto (decisao != "NAO") {
@@ -23,6 +23,9 @@ programa {
             se(salario <= 150.00) {
                 salarioMenor++
             }
+            se(salario > salarioMaior) {
+                salarioMaior = salario
+            }
 
             
             escreva("\nPara prosseguir digite: \n [SIM]\n [NAO]")
@@ -30,15 +33,17 @@ programa {
             leia(decisao)
             decisao=t.caixa_alta(decisao)
             
-            escreva("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
+            escreva("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
         }
-        mediaSalario = (numSalarioTotal / 3)
+        mediaSalario = (numSalarioTotal / habitantes)
         escreva("\nO valor médio dos salários é: R$", mediaSalario)
 
-        numFilhosTotal = (numFilhosTotal / 3)
+        numFilhosTotal = (numFilhosTotal / habitantes)
         escreva("\nA média de filhos entre a população é de:", numFilhosTotal)
 
         escreva("\nNo total temos", salarioMenor, "pessoas com um salário abaixo de R$150,00")
+        
+        escreva("\nO maior salário encontrado foi de R$", salarioMaior)
 
         escreva("\n\n\n\n")
 
