@@ -8,11 +8,11 @@ programa{
             leia(nomes[i])
         }
 
-        para(i = 0; i<5; i--){
+        para(i = 0; i<5; i++){
             escreva(nomes[i])
         }
 
-        para(i = 5; i<=0; i--){
+        para(i = 5; i>=0; i--){
             escreva(nomes[i])
         }
     }
