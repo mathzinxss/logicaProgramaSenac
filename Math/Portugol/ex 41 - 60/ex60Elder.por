@@ -12,7 +12,6 @@ programa {
 			}
 		}
 
-            
             para(i=0;i<10;i++){
                 se(num[i]%2==0){
                     posPar[i]=num[i]
