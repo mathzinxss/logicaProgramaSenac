@@ -48,7 +48,6 @@ programa {
         escreva("\n\n\n\n")
 
         /*
-
             O professor de um colégio precisa calcular as médias finais de seus alunos, mas ele não se lembra exatamente quantos alunos ele tem. Para tal, faça um programa que receba duas notas de cada um dos seus alunos, calcule e mostre a média aritmética e a mensagem que segue a tabela abaixo:
 
                 Média Aritmética     |      Mensagem
