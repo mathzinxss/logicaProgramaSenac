@@ -4,9 +4,10 @@ programa {
 
         inteiro alunos = 1
         real nota1, nota2, mediaAritmetica, aprovados, reprovados, exame
-        cadeia decisao
+        cadeia decisao = "aaaaaaaaaa"
 
-        enquanto (decisao != "NAO") {
+        enquanto (decisao != "NAO" e decisao != "NÃO") {
+            /*
             escreva("\n",alunos, "º aluno")
             escreva("\nDigite sua primeira nota:")
             leia(nota1)
@@ -33,8 +34,9 @@ programa {
                 escreva("Sua média é de:", mediaAritmetica)
                 exame++
             }
+            */
 
-            escreva("\n\nPara prosseguir digite: \n [SIM]\n [NAO]")
+            escreva("\n\nPara prosseguir digite: \n [SIM]\n [NÃO]")
             escreva("\nDeseja prosseguir? ")
             leia(decisao)
             decisao=t.caixa_alta(decisao)
