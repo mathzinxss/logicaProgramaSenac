@@ -13,7 +13,6 @@ programa {
             escreva(n1,"\n")
             escreva(n2,"\n")
             escreva(n3,"\n")
-            
 
         escreva("\n\n\n\n")
 
