@@ -10,15 +10,18 @@ programa {
         }
         
         escreva("\nOs números digitados foram:")
-        
+    
         para (inteiro c = 0; c < 6; c++) {
             escreva(num[c])
         }
-
+    
         escreva("\nA soma dos 3 primeiros números é:")
-        soma = num[0] + num[1] + num[2]
+    
+        para (c = 0; c < 3; c++) {
+            soma = soma + num[c]
+        }
+    
         escreva(soma)
-
 
     escreva("\n\n\n\n")
     }
