@@ -3,7 +3,7 @@ programa {
     funcao inicio() {
 
         cadeia nomes[2]
-        inteiro nota1[2], nota2[2], media[2]
+        real nota1[2], nota2[2], media[2]
 
         para (inteiro c = 0; c < 2;c++) {
             escreva("\nDigite seu nome: ")
@@ -21,8 +21,6 @@ programa {
             escreva("\nNome:", nomes[c] + "\n1º nota: " + nota1[c] + "\n2º nota: " + nota2[c] + "\nMédia: " + media[c])
             escreva("\n--------------")
         }
-
-
 
     escreva("\n\n\n\n")
     }
