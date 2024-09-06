@@ -3,21 +3,35 @@ programa {
         funcao inicio() {
         
             inteiro n
-            cadeia decisao = "zzzzzzzzzz"
 
-            enquanto (decisao != "NÃO" e decisao != "NAO") {
-                escreva("Digite um número: ")
-                leia(n)
-                inteiro numeros[n]
+            escreva("\nDigite o tamanho dos vetores: ")
+            leia(n)
 
-                escreva("\n\nPara prosseguir digite: \n [SIM]\n [NÃO]")
-                escreva("\nDeseja prosseguir? ")
-                leia(decisao)
-                decisao=t.caixa_alta(decisao)
-                
-                escreva("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
+            inteiro a[n], b[n], soma[n]
+
+            escreva("--------------------------------------------")
+            para (inteiro i = 0; i < n; i++) {
+                escreva("\nDigite um número para o Vetor A [",i,"]: ")
+                leia(a[i])
             }
-            escreva("Você digitou o número: ", numeros)
+            
+            escreva("--------------------------------------------")
+
+            para (inteiro i = 0; i < n; i++) {
+                escreva("\nDigite um número para o Vetor B [",i,"]: ")
+                leia(b[i])
+            }
+
+            para (inteiro i = 0; i < n; i++) {
+                soma[i] = a[i] + b[i]
+            }
+
+            escreva("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
+
+            escreva("\nA soma dos vetores é:")
+            para (inteiro i = 0; i < n; i++) {
+                escreva(soma[i],"")
+            }                
 
         escreva("\n\n\n\n")
 
