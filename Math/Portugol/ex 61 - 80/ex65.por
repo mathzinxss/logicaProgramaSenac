@@ -5,47 +5,47 @@ programa {
         cadeia nome
         inteiro senha = 999999, decisao = 1
 
-        enquanto (senha != 123) {
-            escreva("\nDigite o seu nome de usuário:")
-            leia(nome)
-            escreva("Digite a sua senha:")
-            leia(senha)
-            se(senha != 123) {
-                escreva("\nSenha incorreta! Tente novamente.\n")
-            }
+        escreva("\nDigite o seu nome de usuário:")
+        leia(nome)
+        escreva("Digite a sua senha:")
+        leia(senha)
+        se(senha != 123) {
+            escreva("\nSenha incorreta! Tente novamente.\n")
         }
-        escreva("\nBem-vindo",nome,"ao sistema de gerenciamento de contas!")
-        enquanto (decisao < 4 e decisao >= 1) {
-            escreva("\n======================================")
-            escreva("\n[1] Sacar\n[2] Depositar\n[3] Empréstimo\n[4] Sair")
-            escreva("\nDigite a opção desejada: ")
-            leia(decisao)
+        se (senha == 123) {
+            escreva("\nBem-vindo",nome,"ao sistema de gerenciamento de contas!")
+            enquanto (decisao < 4 e decisao >= 1) {
+                escreva("\n======================================")
+                escreva("\n[1] Sacar\n[2] Depositar\n[3] Empréstimo\n[4] Sair")
+                escreva("\nDigite a opção desejada: ")
+                leia(decisao)
 
-            se (decisao == 1) {
+                se (decisao == 1) {
 
-                escreva("\nSeu saldo atual é de: R$", saldoAtual)
-                escreva("\nQuanto você deseja sacar? ")
-                leia(saldo)
+                    escreva("\nSeu saldo atual é de: R$", saldoAtual)
+                    escreva("\nQuanto você deseja sacar? ")
+                    leia(saldo)
 
-                se (saldoAtual == 0) {
-                    escreva("\nNão foi posivel realizar o saque.")
+                    se (saldoAtual == 0) {
+                        escreva("\nNão foi posivel realizar o saque.")
+                    }
+                    senao se (saldoAtual < saldo) {
+                        escreva("\nSaldo insuficiente!")
+                    }
+                    senao {
+                        saldoAtual = saldoAtual - saldo
+                        escreva("\nVocê sacou R$", saldo, "Seu novo saldo é R$", saldoAtual,"\n")
+                    }
                 }
-                senao se (saldoAtual < saldo) {
-                    escreva("\nSaldo insuficiente!")
-                }
-                senao {
-                    saldoAtual = saldoAtual - saldo
-                    escreva("\nVocê sacou R$", saldo, "Seu novo saldo é R$", saldoAtual,"\n")
-                }
-            }
-            se (decisao == 2) {
-                escreva("\nDigite o valor a ser depositado: ")
-                leia(saldoAtual)
-                se (saldo <= 0) {
-                    escreva("\nValor inválido!")
-                }
-                senao {
-                    escreva("\nVocê depositou R$", saldoAtual, "\n")
+                se (decisao == 2) {
+                    escreva("\nDigite o valor a ser depositado: ")
+                    leia(saldoAtual)
+                    se (saldo <= 0) {
+                        escreva("\nValor inválido!")
+                    }
+                    senao {
+                        escreva("\nVocê depositou R$", saldoAtual, "\n")
+                    }
                 }
             }
         }
