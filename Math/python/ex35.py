@@ -8,3 +8,4 @@ for contador in range(6):  # O loop vai de 0 a 4
 
 print(f"Quantidade de números pares: {pares}")
 print(f"Quantidade de números ímpares: {impares}")
+
