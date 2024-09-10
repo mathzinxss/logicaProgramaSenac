@@ -13,7 +13,8 @@ programa {
             se(senha != 123) {
                 escreva("\nSenha incorreta! Tente novamente.\n")
             }
-        };
+        }
+        escreva("\nBem-vindo",nome,"ao sistema de gerenciamento de contas!")
         enquanto (decisao < 4 e decisao >= 1) {
             escreva("\n======================================")
             escreva("\n[1] Sacar\n[2] Depositar\n[3] Empréstimo\n[4] Sair")
