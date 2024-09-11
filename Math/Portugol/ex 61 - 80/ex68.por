@@ -6,7 +6,7 @@ programa
 		inteiro num[8]
 
 		para(inteiro c = 0; c < 8; c++) {
-			escreva("Digite um número
+			escreva("Digite um número: ")
 		}
 	}
     /*
