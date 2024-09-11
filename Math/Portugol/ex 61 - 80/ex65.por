@@ -1,9 +1,9 @@
 programa {
     funcao inicio () {
 
-        real saldoAtual = 0, juros
+        real saldoAtual = 0
         cadeia nome
-        inteiro senha = 999999, decisao = 1, parcelas, saldo= 999999999
+        inteiro senha = 999999, decisao = 1, parcelas, saldo= 999999999, valor
 
         escreva("\nDigite o seu nome de usuário:")
         leia(nome)
@@ -13,7 +13,7 @@ programa {
             escreva("\nSenha incorreta! Tente novamente.\n")
         }
         se (senha == 123) {
-            escreva("\nBem-vindo",nome,"ao sistema de gerenciamento de contas!")
+            escreva("\nBem-vindo",nome,"ao sistema de gerenciamento de contas!\n\n")
             enquanto (decisao < 4 e decisao >= 1) {
                 escreva("\n======================================")
                 escreva("\n[1] Sacar\n[2] Depositar\n[3] Empréstimo\n[4] Sair")
@@ -22,7 +22,7 @@ programa {
 
                 se (decisao == 1) {
 
-                    escreva("\nSeu saldo atual é de: R$", saldoAtual)
+                    escreva("\nSaldo: R$", saldoAtual)
                     escreva("\nQuanto você deseja sacar? ")
                     leia(saldo)
 
@@ -38,45 +38,28 @@ programa {
                     }
                 }
                 se (decisao == 2) {
+                    escreva("\nSaldo: ", saldoAtual)
                     escreva("\nDigite o valor a ser depositado: ")
                     leia(saldoAtual)
                     se (saldo <= 0) {
                         escreva("\nValor inválido!")
                     }
                     senao {
-                        escreva("\nVocê depositou R$", saldoAtual, "\n")
+                        escreva("Seu novo saldo é R$", saldoAtual, "\n")
                     }
                 }
                 se (decisao == 3) {
-                    escreva("\nO seu saldo atual é de: R$",saldoAtual)
-                    escreva("\nDigite o valor do empréstimo: R$")
-                    leia(saldo)
-                    se (saldo < 1000) {
-                        escreva("\nO valor do empréstimo deve ser maior que R$1000")
-                    }
-                    senao se (saldo > (saldo * 2)){
-                        escreva("\nO valor do empréstimo não pode ser maior que o dobro do saldo atual")
-                    }
-                    senao {
-                        escreva("\nVocê foi aprovado para o empréstimo! Você emprestou R$", saldo)
-                        escreva("\nO limite de parcelas é de 24 meses, acrescentando uma taxa de juros de 1.5% ao mês.")
-                        escreva("\nEm quantas parcelas você deseja dividir o pagamento do empréstimo? ")
+                    escreva("\nDe quanto você precisa? ")
+                    leia(valor)
+                    se (valor > 0.0) {
+                        escreva("Em quantas parcelas? ")
                         leia(parcelas)
 
-                        se (parcelas <= 24) {
-                            taxaJuros = 0.015
-
-                            // Cálculo da parcela usando o Sistema Price
-                        }
-                            valor_parcela = (saldo * taxa_juros * (1 + taxa_juros)^parcelas) / ((1 + taxa_juros)^parcelas - 1)
-
-                            escreva("\nO valor de cada parcela é de R$", valor_parcela:2)
-                            escreva("\nVocê pagará em ", parcelas, " parcelas.")
-                        senao
-                            escreva("\nNúmero de parcelas inválido. O máximo permitido é 24.")
-
-
-                    
+                        escreva("\nValor com juros: ", (valor*1.1))
+                        escreva("\nNúmero de parcelas: ", parcelas)
+                        escreva("\nValor da parcela: ", (valor*1.1)/parcelas)
+                        saldo += valor
+                    }
                 }
             }
         }
