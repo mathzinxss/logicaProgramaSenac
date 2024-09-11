@@ -1,6 +1,4 @@
-programa
-{
-	inclua biblioteca Texto --> t
+programa{
 	funcao inicio(){
 		inteiro numeros[10], impar = 0, a
 		para(inteiro c = 0; c < 10; c++) {
@@ -12,10 +10,9 @@ programa
 			}
 		}
 		escreva("\nNúmeros impares:")
-		para (inteiro c = 0; c <= impar; c++) {
+		para (inteiro c = 0; c < impar; c++) {
 			escreva(numeros[c])
 		}
-
 	escreva("\n\n\n\n")
 	}
     /*
