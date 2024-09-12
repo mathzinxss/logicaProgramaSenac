@@ -15,6 +15,7 @@ programa{
             }
             se (c % 2 != 0) {
                 vetor3[c] = vetor2[c]
+            }
         }
         escreva("\n", vetor3)
 	escreva("\n\n\n\n")
