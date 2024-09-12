@@ -19,10 +19,6 @@ programa{
 		escreva("\nVocê digitou os números: ", numeros[x], numeros[y])
 
 		escreva("\n\nA soma dos números é: ", (numeros[x] + numeros[y]))
-
-
-
-
 	escreva("\n\n\n\n")
 	}
     /*
