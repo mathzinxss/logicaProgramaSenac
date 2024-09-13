@@ -1,26 +1,29 @@
 programa{
-    inclua biblioteca Texto --> t
+	inclua biblioteca Tipos --> ti
+	inclua biblioteca Texto --> t
+
     funcao inicio(){
+
         cadeia cpf
-        inteiro cpf_numeros, vetor[11]
-        inteiro i = 0
-        
-        escreva("Digite o CPF (com ou sem pontos e traços): ")
+        inteiro num, vet[11], somaDigito1 = 0, somaDigito2 = 0, digito1, digito2
+
+        escreva("Escreva seu cpf: ")
         leia(cpf)
 
-        // Remover pontos e traços do CPF
-        para(inteiro i = 0; i < comprimento(cpf); i++)
-        {
-            se(cpf[i] != '.' e cpf[i] != '-')
-            {
-                cpf_numeros[i] = caractere_para_inteiro(cpf[i])
+        para (inteiro c = 0; c < 11; c++) {
+            texto = t.extrair_subtexto(cpf, c, c+1)
+            se(texto != "." e texto != "-") {
+                vet[c] = ti.cadeia_para_inteiro(valor, 10)
+            }
+            senao {
+                i--
+            }
+            j ++
+
+            para (inteiro i = 0; i < 9; i++){
+                somaDigito
             }
         }
-        escreva("CPF: ")
-        para(inteiro i = 0; i < comprimento(cpf); i++) {
-            escreva(cpf_numeros[i])
-        }
-
     }
     /* 
 
