@@ -1,14 +1,14 @@
 programa{
     funcao inicio(){
-        inteiro salario[5]
-        cadeia nome[5]
-        inteiro pi,pt,aux
+        real salario[6], aux
+        cadeia nome[6], auxNome
+        inteiro pi,pt
 
-        para(inteiro i=0; i<5; i++){
+        para(inteiro aux=0; aux<6; aux++){
             escreva("Qual o seu nome? ")
-            leia(nome[i])
+            leia(nome[aux])
             escreva("Qual o seu salário? ")
-            leia(salario[i])
+            leia(salario[aux])
         }
 
         para(pi=0;pi<5;pi++){
@@ -17,12 +17,16 @@ programa{
                     aux = salario[pt]
                     salario[pt] = salario[pi]
                     salario[pi] = aux
+
+                    auxNome = nome[pt]
+                    nome[pt] = nome[pi]
+                    nome[pi] = auxNome
                 }
             }
         }
 
         para(inteiro i = 0;i<5;i++){
-            escreva(salario[i])
+            escreva(nome[i],salario[i])
         }
     }
 }
