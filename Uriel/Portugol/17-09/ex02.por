@@ -1,6 +1,6 @@
 programa{
     funcao inicio(){
-        real salario[5]
+        inteiro salario[5]
         cadeia nome[5]
         inteiro pi,pt,aux
 
@@ -21,8 +21,8 @@ programa{
             }
         }
 
-        para(aux = 0;aux<6;aux++){
-            escreva(salario[aux])
+        para(inteiro i = 0;i<5;aux++){
+            escreva(salario[i])
         }
     }
 }
