@@ -21,7 +21,7 @@ programa{
             }
         }
 
-        para(inteiro i = 0;i<5;aux++){
+        para(inteiro i = 0;i<5;i++){
             escreva(salario[i])
         }
     }
