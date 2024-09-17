@@ -10,8 +10,6 @@ programa{
 			escreva("Digite um número: ")
 			leia(numeros[c])
 		}
-
-
 		escreva("\nDigite um número entre 0 e 11: ")
 		leia(x)
 		escreva("Digite mais um número entre 0 e 11: ")
@@ -19,10 +17,6 @@ programa{
 		escreva("\nVocê digitou os números: ", numeros[x], numeros[y])
 
 		escreva("\n\nA soma dos números é: ", (numeros[x] + numeros[y]))
-
-
-
-
 	escreva("\n\n\n\n")
 	}
     /*
