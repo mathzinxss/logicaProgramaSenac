@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro x[3][3], y=0
+		inteiro x[6][6], y=0
 
 		para(inteiro lin=0;lin<3;lin++)
 		{
@@ -12,7 +12,7 @@ programa
 				escreva("digite um número: ")
 				leia(x[lin][col])
 
-				se(x[lin][col]>=10)
+				se(x[lin][col]>10)
 				{
 					y++
 				}
