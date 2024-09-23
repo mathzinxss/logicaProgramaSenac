@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x[3][3], y=0
+
+		para(inteiro lin=0;lin<3;lin++)
+		{
+			para(inteiro col=0;col<3;col++)
+			{
+				escreva("digite um número: ")
+				leia(x[lin][col])
+
+				se(x[lin][col]>=10)
+				{
+					y++
+				}
+				
+			}
+			
+		}
+		escreva(y)
+	}
+}
