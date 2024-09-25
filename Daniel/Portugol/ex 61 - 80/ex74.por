@@ -1,24 +1,29 @@
 programa{
 
-    funcao inicio(){
-    
-        real x[20]
 
-        para(inteiro i=0;i<20;i++){
-            escreva ("Digite um número: ")
-            leia(x[i])
+    funcao real soma(real x[]){
+        real total=0
+        para(inteiro i=0;i<5;i=i+1){
+            
+            total+=x[i ]
             
         }
-
-        escreva(reais(x))
-    
+        retorne total
     }
-    funcao real reais(real x[]){
-        para(inteiro i=0;i<20;i++){
-        retorne x = x + x[i]
-        }
+    funcao inicio(){
     
-    
+       real x[5]
+    //i++
+    //i=+1
+    //i+=1
+       para(inteiro i=0;i<5;i++){
+       
+        escreva("Digite um valor: ")
+        leia(x[i])
+       }
+
+
+       escreva("Soma dos elementos do vetor"+" "+soma(x))
     }
 
 }

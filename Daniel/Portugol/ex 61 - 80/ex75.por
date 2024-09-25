@@ -1,40 +1,49 @@
 programa
 {
+<<<<<<< HEAD
     funcao inicio()
     {
         
-        real valores[5] = {50, 20, 30, 10, 40}
-        
-        
-        ordenarValores(valores)
-    }
-
     
-    funcao ordenarValores(real valores[])
-    {
-        inteiro i, j
-        real temp
+=======
+	
+	funcao inicio()
+	{
+		real a[5]
+		inteiro i=0
+		enquanto (i<=4)
+		{
+			escreva("Número: ")
+			leia(a[i])
+            i++
+			
+		}
+        crescente(a)
+	}
+    funcao crescente(real a[]){
+    
+        //Bubble sort
+        inteiro pi, pt
+        real aux
+        para(pi=0;pi<4;pi++){
+        
+            para(pt=pi+1;pt<5;pt++){
 
-       
-        para (i = 0; i < comprimento(valores) - 1; i++)
-        {
-            para (j = 0; j < comprimento(valores) - 1 - i; j++)
-            {
-                se (valores[j] > valores[j + 1])
-                {
-                    
-                    temp = valores[j]
-                    valores[j] = valores[j + 1]
-                    valores[j + 1] = temp
+                se(a[pi]<a[pt]){
+                    aux=a[pt]
+                    a[pt]=a[pi]
+                    a[pi]=aux
                 }
+            
             }
+        
         }
-
-       
-        para (i = 0; i < comprimento(valores); i++)
-        {
-            escreva("R$", valores[i], "\n")
+        para(inteiro i=0;i<5;i++){
+        
+            escreva(a[i]," - ")
+        
         }
+    
+>>>>>>> 7f00321fbe62b32576efed03aa4edb5ac13aad4b
     }
 }
- /*3-Faça um procedimento que recebe, por parâmetro, um valor A(50) de reais e imprima o ordenado em ordem crescente*/
